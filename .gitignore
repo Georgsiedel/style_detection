@@ -3,3 +3,4 @@ runs
 __pycache__
 nst/__pycache__/
 yolo26n.pt
+yolo26s-objv1-150.pt
