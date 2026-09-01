@@ -1,5 +1,15 @@
 venv
-runs
+#Ignore all files inside runs/ and its subdirectories
+runs/**
+
+#Re-include all subdirectories so Git can traverse them to find allowed files
+!runs/**/
+
+#Whitelist specific, small results files
+!runs/**/results.png
+!runs/**/results.csv
+!runs/**/args.yaml
+
 __pycache__
 nst/__pycache__/
 yolo26n.pt
